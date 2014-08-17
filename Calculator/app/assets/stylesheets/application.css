@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.CalcButtons{
+	width: 4em;
+	height: 4em;
+	border: 1px blue solid;
+	background-color: red;
+	display: inline-block;
+	text-align: center;
+	vertical-align: text-bottom;
+}
