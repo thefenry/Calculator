@@ -17,20 +17,8 @@
 
 $(document).ready(function () {
 	$(".CalcButtons").on("click", function(){
-		// debugger;
-		originalContent = $("#Calculations").val();
-		newContent = originalContent + this.innertext
+		var originalContent = $("#Calculations").val();
+		var newContent = originalContent + this.innerHTML;
 		$("#Calculations").val(newContent);
-		// += this.innertext;
 	})
 })
-
- // $(document).ready(function () {
-
- //     $("#gallery_id li").on('click', function () {
- //         alert(this.id);
- //     })
- // });
-// $( "#foo" ).bind( "click", function() {
-//   alert( "User clicked on 'foo.'" );
-// });
