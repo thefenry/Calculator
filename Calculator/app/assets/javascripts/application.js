@@ -18,7 +18,8 @@
 $(document).ready(function () {
 	$(".CalcButtons").on("click", function(){
 		var originalContent = $("#Calculations").val();
-		var newContent = originalContent + this.innerHTML;
+		// debugger;
+		var newContent = originalContent + this.firstChild.innerHTML;
 		$("#Calculations").val(newContent);
 	})
 })

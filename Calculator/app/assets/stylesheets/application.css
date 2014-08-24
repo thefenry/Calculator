@@ -19,11 +19,20 @@
 	border: 1px blue solid;
 	background-color: red;
 	display: inline-block;
+	/*text-align: center;*/
+	/*vertical-align: text-bottom;*/
+}
+
+.ButtonContent{
+	vertical-align: middle;
 	text-align: center;
-	vertical-align: text-bottom;
 }
 
 #Calculations{
 	width: 12em;
 	height: 3em;
+}
+
+#ZeroButton{
+	width: 8.375em;
 }
