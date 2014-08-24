@@ -36,3 +36,15 @@
 #ZeroButton{
 	width: 8.375em;
 }
+
+.Operations{
+	display: inline;
+}
+
+.OperationsButton{
+	width: 4em;
+	height: 4em;
+	border: 1px blue solid;
+	background-color: blue;
+	display: block;
+}
