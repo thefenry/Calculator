@@ -17,13 +17,26 @@
 
 $(document).ready(function () {
 	$(".CalcButtons").on("click", function(){
-		if (this.firstChild.innerHTML != "=") {
-		var originalContent = $("#Calculations").val();
+		var content = this.firstChild.innerHTML;
 		// debugger;
-		var newContent = originalContent + this.firstChild.innerHTML;
-		$("#Calculations").val(newContent);
-	}else{
-		$("#Calculations").val
-	}
+		switch(content){			
+			case "=":
+			PerformOperations();
+			break;
+			default:
+			Addtoinput(content);
+			break;
+		}	
 	})
 })
+
+function PerformOperations () {
+	debugger; 
+}
+
+function Addtoinput (content) {
+	// debugger;
+	var originalContent = $("#Calculations").val();
+	var newContent = originalContent + content;
+	$("#Calculations").val(newContent);
+}
