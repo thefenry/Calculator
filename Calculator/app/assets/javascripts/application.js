@@ -17,8 +17,26 @@
 
 $(document).ready(function () {
 	$(".CalcButtons").on("click", function(){
-		var originalContent = $("#Calculations").val();
-		var newContent = originalContent + this.innerHTML;
-		$("#Calculations").val(newContent);
+		var content = this.firstChild.innerHTML;
+		// debugger;
+		switch(content){			
+			case "=":
+			PerformOperations();
+			break;
+			default:
+			Addtoinput(content);
+			break;
+		}	
 	})
 })
+
+function PerformOperations () {
+	debugger; 
+}
+
+function Addtoinput (content) {
+	// debugger;
+	var originalContent = $("#Calculations").val();
+	var newContent = originalContent + content;
+	$("#Calculations").val(newContent);
+}
