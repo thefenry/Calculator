@@ -31,11 +31,20 @@ $(document).ready(function () {
 })
 
 function PerformOperations () {
-	debugger; 
+	var total = eval($('#Calculations').val().replace('x', '*'));
+	// total.replace('x', '*');
+	// debugger; 
+
+	$('#Calculations').val(total);
 }
 
 function Addtoinput (content) {
 	// debugger;
+	
+	if (content.toLowerCase === 'x') {
+		debugger; 
+		content = '*'
+	};
 	var originalContent = $("#Calculations").val();
 	var newContent = originalContent + content;
 	$("#Calculations").val(newContent);
